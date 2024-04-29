@@ -4,8 +4,9 @@ let newpage = document.querySelector(".sub-newpage-images")
 let AskDataShow = [];
 function newPageFetch() {
     fetch("https://json-server-13lc.onrender.com/newpage").then((res) => res.json()).then((data) => {
-        newImages(data)
         AskDataShow = data;
+        newImages(data)
+        
     })
         .catch((err) => console.log(err))
 }
@@ -24,7 +25,7 @@ function oneImage(image, description, price, id) {
 }
 
 function newImages(arr) {
-    let images = arr.map((el, idx) => {
+    let images = arr.map((el) => {
         return oneImage(el.image, el.description, el.price, el.id)
     })
     newpage.innerHTML = images.join("")

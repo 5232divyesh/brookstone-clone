@@ -171,8 +171,9 @@ NewestPrice.addEventListener('click', () => {
 
 // addTOCart 
 document.addEventListener("click",(e)=>{
-    if(e.target.classList.contains( "AddToCart")){
+    if(e.target.classList.contains("AddToCart")){
         msgAddToCart(e.target.dataset.id)
+        console.log("hh")
     }
 })
 
@@ -185,7 +186,7 @@ function msgAddToCart(id){
             price : data.price,
             id : data.id
         }
-        fetch(`https://json-server-13lc.onrender.com/addCardData`,{
+        fetch("https://json-server-13lc.onrender.com/addCardData",{
             method : "POST",
             headers:{
                 'Content-Type' : 'application/json'

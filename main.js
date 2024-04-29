@@ -16,7 +16,7 @@ left.addEventListener('click', () => {
 // ----------------------------------------------------
 // fetch data 1st
 let main = document.querySelector(".sub-catogeries")
-function data() {
+function dataFetch() {
     fetch('https://json-server-13lc.onrender.com/data').then((res) => res.json()).then((data) => cartList(data))
         .catch((err) => console.log(err))
 }
@@ -72,3 +72,10 @@ leftside.addEventListener('click', () => {
 
 
 
+setTimeout(()=>{
+    document.querySelector(".adds").style.display = "block"
+},5000)
+
+let cut = document.querySelector(".bi-x-circle").addEventListener("click",()=>{
+    document.querySelector(".adds").style.display = "none"
+})

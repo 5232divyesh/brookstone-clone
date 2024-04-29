@@ -760,23 +760,25 @@
 
     <section class="container Login&SingUp">
         <div class="bothForm row">
-            <div class="login col-12 col-lg-6">
+            <div class="login col-12 col-sm-12 col-md-6 col-lg-6">
                 <h4>Login</h4>
                 <p>If you have an account, please sign in with your email address.</p>
                 <form id="logInForm">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label d-block">Email</label>
-                        <input type="email" name="" class="LoginInput" id="LoginEmail" placeholder="Enter Your Email" required>
+                        <input type="email" name="" class="LoginInput" id="LoginEmail" placeholder="Enter Your Email">
+                        <p class="emailError"></p>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label d-block">Password</label>
-                        <input type="password" name="" class="LoginInput" id="LoginPassword" placeholder="Enter Your Password" required>
+                        <input type="password" name="" class="LoginInput" id="LoginPassword" placeholder="Enter Your Password">
+                        <p class="passwordError"></p>
                     </div>
 
                     <button type="submit" class="btn btn-primary" id="Login">Login</button>
                 </form>
             </div>
-            <div class="signUp col-12 col-lg-6">
+            <div class="signUp col-12 col-sm-12 col-md-6 col-lg-6">
                 <h4>Create Customer</h4>
                 <p>Creating an account has many benefits: check out faster, keep more than one address, track orders and
                     more.</p>
@@ -784,23 +786,23 @@
 
                     <div class="mb-3">
                         <label for="exampleInputName1" class="form-label d-block">First Name</label>
-                        <input type="text" name="FirstName" class="signUpInput" placeholder="Enter Your First Name" id="FirstName" required>
+                        <input type="text" name="FirstName" class="signUpInput1" placeholder="Enter Your First Name" id="FirstName">
+                        <p class="empty1 m-0"></p>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputName2" class="form-label d-block">Last Name</label>
-                        <input type="text" name="" class="signUpInput" placeholder="Enter Your Last Name" id="LastName" required>
+                        <input type="text" name="" class="signUpInput2" placeholder="Enter Your Last Name" id="LastName">
+                        <p class="empty2 m-0"></p>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label d-block">Email</label>
-                        <input type="email" name="" class="signUpInput" placeholder="Enter Your Email" id="SignUpEmail" required>
+                        <input type="email" name="" class="signUpInput3" placeholder="Enter Your Email" id="SignUpEmail">
+                        <p class="empty3 m-0"></p>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label d-block">Password</label>
-                        <input type="password" name="" class="signUpInput" placeholder="Enter Your Password" id="SignUpPassword" required>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input d-block" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1"> Subscribe to our newsletter.</label>
+                        <input type="password" name="" class="signUpInput4" placeholder="Enter Your Password" id="SignUpPassword">
+                        <p class="empty4 m-0"></p>
                     </div>
                     <button type="submit" class="btn btn-outline-primary" id="Submit">Submit</button>
                 </form>
